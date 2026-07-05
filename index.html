@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Dispatch</title>
+<meta name="description" content="Independent local reporting, filed as it happens.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="masthead-title">The Dispatch</div>
+    <div class="masthead-meta">EDITION 001 · <span id="today"></span></div>
+  </div>
+</header>
+
+<nav class="nav">
+  <div class="wrap">
+    <a href="index.html" class="active">Latest</a>
+    <a href="#">Investigations</a>
+    <a href="#">City hall</a>
+    <a href="#">Courts</a>
+    <a href="about.html">About</a>
+  </div>
+</nav>
+
+<main class="wrap">
+
+  <section class="lead">
+    <div class="eyebrow">08:42 <span class="dim">· INVESTIGATION</span></div>
+    <h1><a href="posts/water-board-contract.html">Water board approved contract weeks before bids closed</a></h1>
+    <p class="dek">Internal emails obtained through public records requests show the timeline officials gave the public doesn't match what staff discussed privately.</p>
+    <div class="byline">By <span class="name">Your Name</span> · 6 min read</div>
+  </section>
+
+  <div class="section-label">Also filed today</div>
+
+  <div class="ticker">
+    <div class="ticker-item">
+      <div class="eyebrow">07:15 <span class="dim">· CITY HALL</span></div>
+      <h3><a href="#">Budget vote delayed to second reading</a></h3>
+      <p>Council members cited unresolved questions about a $2M line item added last week.</p>
+    </div>
+    <div class="ticker-item">
+      <div class="eyebrow">06:50 <span class="dim">· COURTS</span></div>
+      <h3><a href="#">Zoning appeal set for September</a></h3>
+      <p>The case could decide whether the disputed lot on 5th Street can be redeveloped.</p>
+    </div>
+    <div class="ticker-item">
+      <div class="eyebrow">YESTERDAY <span class="dim">· SCHOOLS</span></div>
+      <h3><a href="#">School board splits on transit plan</a></h3>
+      <p>A 3-2 vote sends the busing proposal back to committee for revision.</p>
+    </div>
+    <div class="ticker-item">
+      <div class="eyebrow">YESTERDAY <span class="dim">· HOUSING</span></div>
+      <h3><a href="#">Eviction filings up 14% from last quarter</a></h3>
+      <p>County data shows the sharpest rise in zip codes near the new transit line.</p>
+    </div>
+    <div class="ticker-item">
+      <div class="eyebrow">2 DAYS AGO <span class="dim">· LABOR</span></div>
+      <h3><a href="#">Warehouse workers file for union vote</a></h3>
+      <p>If certified, it would be the first organized warehouse in the county.</p>
+    </div>
+    <div class="ticker-item">
+      <div class="eyebrow">2 DAYS AGO <span class="dim">· HEALTH</span></div>
+      <h3><a href="#">Clinic closures leave east side without urgent care</a></h3>
+      <p>Residents now face a 40-minute drive to the nearest open facility.</p>
+    </div>
+  </div>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>&copy; <span id="year"></span> The Dispatch. Independent, reader-supported.</span>
+    <span><a href="about.html">About</a> · <a href="mailto:tips@example.com">Send a tip</a></span>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+  document.getElementById('today').textContent = new Date().toLocaleDateString('en-US', { month: 'short', day: '2-digit', year: 'numeric' }).toUpperCase();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About — The Dispatch</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="masthead">
+  <div class="wrap">
+    <a href="index.html" class="masthead-title" style="color: inherit;">The Dispatch</a>
+    <div class="masthead-meta">EDITION 001 · <span id="today"></span></div>
+  </div>
+</header>
+
+<nav class="nav">
+  <div class="wrap">
+    <a href="index.html">Latest</a>
+    <a href="#">Investigations</a>
+    <a href="#">City hall</a>
+    <a href="#">Courts</a>
+    <a href="about.html" class="active">About</a>
+  </div>
+</nav>
+
+<main class="wrap">
+  <div class="about-body">
+    <h1 class="headline">About The Dispatch</h1>
+    <p>
+      The Dispatch is an independent publication covering [your beat — local government,
+      housing, courts, whatever you choose]. Replace this paragraph with why you started this,
+      and what readers can expect from you that they can't get anywhere else.
+    </p>
+    <p>
+      We're reader-supported and editorially independent. We don't run ads that
+      influence coverage, and we disclose our sourcing wherever we can.
+    </p>
+    <p>
+      Have a story we should be looking into?
+      <a href="mailto:tips@example.com" class="underline-link">Send us a tip</a> — we take source
+      confidentiality seriously.
+    </p>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>&copy; <span id="year"></span> The Dispatch. Independent, reader-supported.</span>
+    <span><a href="about.html">About</a> · <a href="mailto:tips@example.com">Send a tip</a></span>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+  document.getElementById('today').textContent = new Date().toLocaleDateString('en-US', { month: 'short', day: '2-digit', year: 'numeric' }).toUpperCase();
+</script>
+
+</body>
+</html>
